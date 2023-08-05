@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&family=Nanum+Gothic&display=swap');
+
+:root {
+  --background-primary: #0b3775;
+  --text-primary: #6a9ee6;
+  --background-secondary: #3a86f0;
+  --link-clr: #373a8c;
+  --dark-text: #202580;
+  --white-clr: #eeeeee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font: normal 16px sans-serif;
+  min-width: 400px;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-image: url(https://docwaltshireinvesting.files.wordpress.com/2018/12/4k-wallpaper-for-blue-gradient-background-with-gradient-background-for-website-website-technical-info-with-free-wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  
+ul,
+nav {
+  list-style: none;
+}
+  
+a:hover {
+  opacity: 1;
+}
+  
+a.btn {
+    border-radius: 6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+    border: 3px solid var(--background-secondary);
+    transition: 0.3s ease-in;
+    color: var(--white-clr);
+    opacity: 1;
+}
+  
+a.btn:hover {
+    color: var(--white-clr);
+    transition: 0.3s ease;
+}
+
+/*Header style*/
+
+header a {
+    text-decoration: none;
+}
+  
+header {
+    padding: 0 20px;
+    background-color: var(--background-primary);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+  
+#brand {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+  
+#brand a {
+    color: var(--white-clr);
+    letter-spacing: 2px;
+}
+  
+nav ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+  
+nav ul a {
+    color: white;
+    padding-bottom: 2px;
+}
+  
+nav ul a:hover {
+    color: var(--text-primary);
+    border-bottom: 2px solid var(--text-primary);
+}
+  
+nav ul li {
+    padding: 5px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+  
+nav ul li:hover {
+    transition: 0.3s;
+}
+  
+@media only screen and (max-width: 600px) {
+    header nav {
+      display: none;
+    }
+}
+  
+.content-body {
+  /* background-color: #a0bdf1; */
+  background-size: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 11%;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: 'Nanum Gothic', sans-serif !important;
+  margin-top: -5px;
+}
+
+.outer-box {
+  /* background-color: #092427; */
+  background-color: #e2d8d8;
+  margin: 97px auto;
+  width: 30%;
+  height: 400px;
+  box-shadow: 5px 10px 18px rgb(24, 27, 27);
+}
+
+.for-pwd-title h1 {
+  color: var(--background-primary);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 25px;
+  height: 80px;
+  box-sizing: border-box;
+  padding-top: 20px;
+  overflow: hidden;
+}
+
+.inner-box {
+  background-color: var(--background-primary);
+  margin: 50px auto;
+  color: var(--white-clr);
+  position: relative;
+  width: 93%;
+  height: 70%;
+  margin-top: -8px;
+  text-align: left;
+  padding: 19px 0px 0px 13px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.inner-box h2 {
+  text-transform: uppercase;
+  font-size: 23px;
+}
+
+.inner-box p {
+  padding-top: 14px;
+  font-size: 15px;
+}
+
+.inner-box h3 {
+  padding-top: 18px;
+  font-size: 15px;
+  padding-bottom: 8px;
+}
+
+.inner-box input {
+  height: 26px;
+  width: 95%;
+}
+
+.flex-use {
+  padding-top: 15px;
+  display: flex;
+}
+
+.flex-use .button {
+  background-color: #000000;  
+  border: none;
+  color: var(--white-clr);
+  padding: 10px auto;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+  height: 40px;
+  opacity: 0.75;
+  width: 104px;
+}
+
+.flex-use .button:hover {
+  opacity: 1;
+}
+
+.bck {
+  padding-left: 140px;
+  padding-top: 8px;
+}
+
+.bck a:link,
+.bck a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.bck:hover {
+  text-decoration: underline;
+}

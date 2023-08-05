@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&family=Nanum+Gothic&display=swap");
+/* 
+:root {
+  --background-primary: #092326;
+  --text-primary: #21a698;
+  --background-secondary: #01403a;
+  --link-clr: #378c84;
+  --dark-text: #1ca68d;
+  --white-clr: #eeeeee;
+} */
+
+:root {
+  --background-primary: #0b3775;
+  --text-primary: #6a9ee6;
+  --background-secondary: #3a86f0;
+  --link-clr: #373a8c;
+  --dark-text: #202580;
+  --white-clr: #eeeeee;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font: normal 16px sans-serif;
+  min-width: 400px;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background: linear-gradient(to top, #032c57, white);
+}
+
+ul,
+nav {
+  list-style: none;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+a.btn {
+  border-radius: 6px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+  border: 3px solid var(--background-secondary);
+  transition: 0.3s ease-in;
+  color: var(--white-clr);
+  opacity: 1;
+}
+
+a.btn:hover {
+  color: var(--white-clr);
+  transition: 0.3s ease;
+}
+
+/*Header style*/
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 20px;
+  background-color: var(--background-primary);
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: var(--white-clr);
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav ul a {
+  color: white;
+  padding-bottom: 2px;
+}
+
+nav ul a:hover {
+  color: var(--text-primary);
+  border-bottom: 2px solid var(--text-primary);
+}
+
+nav ul li {
+  padding: 5px;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+nav ul li:hover {
+  transition: 0.3s;
+}
+
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+}
+
+#brand {
+  pointer-events: none;
+}
+
+/*LOGIN & SIGN UP PAGE*/
+
+.login-cont { 
+  background: linear-gradient(to top, #2071c7, white);
+  font-family: roboto;
+  user-select: none;
+  height: 1325px;
+  background-size: 100%;
+  position: absolute;
+  width: 100%;
+  top: 8%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 450px;
+  margin: 60px auto;
+}
+
+.signup,
+.login {
+  width: 50%;
+  background: #181818;
+  color: var(--white-clr);
+  float: right;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+  text-transform: uppercase;
+  border: 2px solid #181818;
+}
+
+.login {
+  float: left !important;
+}
+
+.signup-form,
+.login-form {
+  background: var(--background-primary);
+  padding: 40px;
+  clear: both;
+  transition: 0.2s;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 20px;
+  box-shadow: 5px 10px 18px rgb(24, 27, 27);
+}
+
+.input {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border: 2px solid var(--white-clr);
+  color: #3e3e40;
+  font-size: 14px;
+  outline: none;
+  transform: all 0.5s ease;
+  border-radius: 8px;
+  display: block;
+}
+
+.input:focus {
+  border: 2px solid var(--link-clr);
+}
+
+.but {
+  width: 100%;
+  background: var(--background-secondary);
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: var(--white-clr);
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-bottom: 18px;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+.form-field small {
+  color: #f0474f;
+  font-size: 14px;
+}
+
+.but:hover {
+  background-color: #000000;
+  text-decoration: underline;
+}
+
+span a {
+  text-align: end;
+  color: var(--white-clr);
+}
+
+.unline:hover {
+  text-decoration: underline;
+}
+
+::-webkit-input-placeholder {
+  color: #3e3e40;
+  font-family: roboto;
+}
+
+::-moz-placeholder {
+  color: #3e3e40;
+  font-family: roboto;
+}
+
+:-ms-input-placeholder {
+  color: #3e3e40;
+  font-family: roboto;
+}
+
+:-moz-placeholder {
+  color: #3e3e40;
+  font-family: roboto;
+}

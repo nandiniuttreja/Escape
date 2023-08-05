@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=v, initial-scale=1.0">
+    <title>Yog-Tantra</title>
+    <link rel="stylesheet" href="login.css">
+    <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script>
+</head>
+
+<body onload="document.left-form.email.focus()">
+    <!-- main section  -->
+    <div class="login-cont">
+        <div class="container" id="lblock">
+            <div class="login" id="login-toggle" onclick="toggleLogin()">Log In</div>
+            <div class="signup" id="signup-toggle" onclick="toggleSignup()">Sign Up</div>
+            <div class="login-form" id="loginn">
+                <form name="login" method="POST" action="myPage.php">
+                    <div class="form-field">
+                        <small></small>
+                        <input type="text" placeholder="Your Email Address" class="input" id="femaill"
+                            autocomplete="off">
+                    </div>
+                    <div class="form-field">
+                        <small></small>
+                        <input type="password" placeholder="Choose a Password" class="input" id="fpasss"
+                            autocomplete="off">
+                    </div>
+                    <div class="form-field">
+                        <a href="index.html"><input class="but" type="submit" value="Next" onClick="myFunction2()"></a>
+                    </div>
+                </form>
+                <span class="unline"><a href="./pwd.html">Forgot Password?</a></span>
+            </div>
+        </div>
+        <div class="container" id="rblock">
+            <div class="signup-form" id="signupp">
+                <form name="signup" method="POST" action="myPage.php">
+                    <div class="form-field">
+                        <small></small>
+                        <input type="text" placeholder="Your Name" class="input" id="fname" autocomplete="off">
+                    </div>
+                    <div class="form-field">
+                        <small></small>
+                        <input type="text" placeholder="Your Email Address" class="input" id="femail"
+                            autocomplete="off">
+                    </div>
+                    <div class="form-field">
+                        <small></small>
+                        <input type="password" placeholder="Choose a Password" class="input" id="fpass"
+                            autocomplete="off">
+                    </div>
+                    <div class="form-field">
+                        <small></small>
+                        <input type="password" placeholder="Confirm Password" class="input" id="fcpass"
+                            autocomplete="off">
+                    </div>
+                    <div class="form-field">
+                        <a href="./index.html"><input class="but" type="submit" value="Next" onClick="myFunction()"></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./login.js"></script>
+
+</html>

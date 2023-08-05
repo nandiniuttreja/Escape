@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yog-Tantra</title>
+  <link rel="stylesheet" href="pwd.css">
+</head>
+
+<body>
+  <!-- main content -->
+  <div class="content-body">
+    <div class="outer-box">
+      <div class="for-pwd-title">
+        <h1>login to escape</h1>
+      </div>
+      <div class="inner-box">
+        <h2>forgot password</h2>
+        <p>Enter your email address you used to sign in <br>to Escape and we'll send you a link to reset <br>your
+          password.</p>
+        <form name="form1" action="#">
+          <h3>Email Address</h3>
+          <input name="text1" type="text">
+          <p id="msg" style="font-size: 12px; margin-top: -8px;"></p>
+          <div class="flex-use">
+            <div>
+              <input type="button" class="button" name="submit" value="SUBMIT"
+                onclick="ValidateEmail(document.form1.text1)" />
+            </div>
+            <div class="bck">
+              <a href="login.html">Back To Login</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  function ValidateEmail(inputText) {
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (inputText.value.match(mailformat)) {
+      alert("Check your email, we've sent a link to reset your password.");
+      document.form1.text1.focus();
+      return true;
+    } else {
+      document.getElementById("msg").innerHTML = "*Please enter a valid email address."
+      document.form1.text1.focus();
+      return false;
+    }
+  }
+</script>
+
+</html>
